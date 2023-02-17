@@ -4,7 +4,7 @@ interface Person {
 }
 
 function hiMom(momName: Person) {
-  return "Hi " + momName;
+  return `Hi ${momName}`;
 }
 
 let user = { firstName: "mom", lastName: "momerson" };
@@ -19,6 +19,7 @@ function printPointCoordinates(point: Point): string {
 }
 
 function findLineLength(point1: Point, point2: Point): number {
+  // double star is exponentiation, since you'll forget that once you read this comment again
   let length: number = (point2.x - point1.x) ** 2 + (point2.y - point1.y) ** 2;
   length = Math.sqrt(length);
   return length;
